@@ -10,10 +10,10 @@ Run Powershell as administrator on a new installation of Windows Server (Tested 
 Local administrator account will have it's password set to Password123. Change the password or disable this account after installation of AD.
 
 The following OU's are created and populated with 10,123 users. Users in the IT group are added into the "Domain Admins" group.
--Executive
--Finance
--Marketing
--Operations
--IT
--Sales
--Research
+- Executive
+- Finance
+- Marketing
+- Operations
+- IT
+- Sales
+- Research
