@@ -43,4 +43,4 @@ Foreach ($user in $Import)
 
 #Add users in the IT group into domain admins 
 $path = "OU=IT," + $DNName
-Get-ADUser -SearchBase $path -Filter * | Add-ADGroupMember -Identity "Domain Admins"
+Get-ADUser -SearchBase $path -Filter * | ForEach-Object {Add-ADGroupMember -Identity "Domain Admins" -Members $_ }
